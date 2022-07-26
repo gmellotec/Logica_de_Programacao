@@ -36,7 +36,8 @@ contAprovados = 0
 maiorMedia = 0
 somaMediaAprovados = 0
 
-for i in range(0, n): ## Para separar as médias acima de 70 pontos (APROVADOS) e o % de aprovados
+## Para separar as médias acima de 70 pontos (APROVADOS) e o % de aprovados
+for i in range(0, n):
   if medias[i] >= 70:
     print(candidatos[i])
     mediaAprovados.append(medias[i])
@@ -45,7 +46,8 @@ for i in range(0, n): ## Para separar as médias acima de 70 pontos (APROVADOS) 
 
 percentAprovados = (contAprovados / n) * 100
 
-for i in range(0, n): ## Para exibir o nome do candidato com maior nota
+## Para exibir o nome do candidato com maior nota
+for i in range(0, n): 
   if medias[i] > maiorMedia:
     maiorMedia = medias[i]
     maiorMediaNome = candidatos[i]
