@@ -1,3 +1,5 @@
+## Trabalhando com Funções
+
 def impostoSobreSalario(valor):
   if valor < 3000 * 12:
     return 0
@@ -18,9 +20,11 @@ def impostosobreGC(valor):
   else:
     return 0
 
+## Esta função realiza o calulo do total de imposto bruto
 def impostoBrutoTotal(salario, servico, gc):
   return impostoSobreSalario(salario) + impostoSobreServico(servico) + impostosobreGC(gc)
 
+## Esta função calcula os abatimentos com GMédicos e Educacionais
 def abatimento(salario, servico, gc, gastosMedicos, gastosEducacionais):
   gastosDedutiveis = gastosMedicos + gastosEducacionais
   maximoDedutivel = impostoBrutoTotal(salario, servico, gc) * 0.3
