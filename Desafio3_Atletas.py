@@ -7,6 +7,8 @@ somaAltura = 0
 alturaMaior = 0
 mulheres = 0
 
+
+## Entrada de dados dos Atletas
 for i in range(1, qAtletas + 1):
   print(f"Digite os dados do atleta numero {i}:")
   nome = input("Nome: ")
@@ -23,9 +25,11 @@ for i in range(1, qAtletas + 1):
   while (peso <= 0):
     peso = float(input("Valor invalido! Favor digitar um valor positivo: "))
 
+## Calculo da média de peso
   somaPeso += peso
   pesomedio = somaPeso / qAtletas
 
+## Mostrar o nome do atleta com maior altura
   if (altura > alturaMaior):
     alturaMaior = altura
     atletaAlto = nome
@@ -40,10 +44,8 @@ for i in range(1, qAtletas + 1):
     somaAltura += altura
     aMedia = somaAltura / qMulheres
 
+## Calcular percentural de homens entre os atletas totais
   percentH = (qHomens / qAtletas) * 100
-
-
-
 
 print("RELATÓRIO:")
 print()
